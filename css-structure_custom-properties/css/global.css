@@ -1,0 +1,7 @@
+:root {
+  --color-black: rgb(37 38 41);
+  --color-orange: rgb(255 74 17);
+  --color-white: rgb(255 255 255);
+
+  --border-radius-def: 8px;
+}
