@@ -63,7 +63,7 @@ a {
 }
 
 /* 3. These styles should apply to all external links (you can use the attribute selector) */
-FIXME {
+a[target="_blank"] {
   outline: 2px dashed red;
   color: #ff8000;
 }
