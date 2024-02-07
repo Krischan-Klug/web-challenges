@@ -10,4 +10,12 @@ button.addEventListener("click", () => {
   // Exercise:
   // Use conditions and the logical AND operator to write
   // "You are a teen." or "You are not a teen." into the output.
+
+  if (age <= 18) {
+    output = "You are a teen";
+  }
+
+  if (age > 18) {
+    output = "You are not a teen";
+  }
 });
