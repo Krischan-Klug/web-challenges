@@ -90,7 +90,7 @@ increaseByOneButton.addEventListener("click", () => {
 });
 
 increaseByFiveButton.addEventListener("click", () => {
-  operand1 + 5;
+  operand1 += 5;
   console.log(operand1);
   // 8. Increase the value of "operand1" by 5. Log the new value to the console.
 });
@@ -102,19 +102,19 @@ decreaseByOneButton.addEventListener("click", () => {
 });
 
 decreaseByFiveButton.addEventListener("click", () => {
-  operand1 - 5;
+  operand1 -= 5;
   console.log(operand1);
   // 8. Decrease the value of "operand1" by 5. Log the new value to the console.
 });
 
 multiplyByTwoButton.addEventListener("click", () => {
-  operand1 * 2;
+  operand1 *= 2;
   console.log(operand1);
   // 11. Multiply the value of "operand1" by 2. Log the new value to the console.
 });
 
 divideByTwoButton.addEventListener("click", () => {
-  operand1 / 2;
+  operand1 /= 2;
   console.log(operand1);
   // 12. Divide the value of "operand1" by 2. Log the new value to the console.
 });
