@@ -12,11 +12,24 @@ console.clear();
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
+let title = "";
+let text = "";
+let likes = 0;
+let user = "";
+let isReported = false;
 
 /*
 2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
 */
 
 // --v-- write your code here --v--
+console.log(title);
+console.log(text);
+console.log(likes);
+console.log(user);
+console.log(isReported);
 
+likes++;
+
+console.log(likes);
 // --^-- write your code here --^--
