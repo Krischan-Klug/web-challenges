@@ -252,8 +252,6 @@ width, etc. */
     justify-content: center;
   }
   .product-card {
-    justify-content: center;
-    align-items: center;
     width: 40%;
     height: 250px;
   }
@@ -267,6 +265,27 @@ width, etc. */
 /* Media Query Desktop */
 /* --- */
 @media (min-width: 1024px) {
+  .--forest {
+    width: 100%;
+  }
+
+  body {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+  .header-text {
+    width: 50%;
+  }
+  .main-header {
+    width: 50%;
+  }
+  .header-brand {
+    padding: 0;
+  }
 }
 
 /* --- */
