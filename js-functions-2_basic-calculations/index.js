@@ -11,22 +11,39 @@ They should return the result of the respective calculation:
 */
 
 function add(a, b) {
+  let answer;
+  answer = a + b;
+  return answer;
+
   // Code here
 }
 
 function subtract(a, b) {
+  let answer;
+  answer = a - b;
+  return answer;
   // Code here
 }
 
 function multiply(a, b) {
+  let answer;
+  answer = a * b;
+  return answer;
   // Code here
 }
 
 function divide(a, b) {
+  let answer;
+  answer = a / b;
+  return answer;
+
   // Code here
 }
 
 function remainder(a, b) {
+  let answer;
+  answer = a % b;
+  return answer;
   // Code here
 }
 
