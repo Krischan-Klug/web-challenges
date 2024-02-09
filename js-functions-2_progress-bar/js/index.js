@@ -25,7 +25,7 @@ let yPosition;
 const innerHeight = window.innerHeight; // mitte des dokument
 const documentHeight = document.body.clientHeight; //ende des dokument
 
-let scrollPercentage;
+let scrollPercent;
 let newWidth;
 
 window.addEventListener("scroll", function () {
@@ -41,6 +41,6 @@ window.addEventListener("scroll", function () {
 });
 
 function calculateScrollPercentage() {
-  scrollPercentage = (yPosition / (documentHeight - innerHeight)) * 100;
-  newWidth = scrollPercentage + "%";
+  scrollPercent = (yPosition / (documentHeight - innerHeight)) * 100;
+  newWidth = scrollPercent + "%";
 }
