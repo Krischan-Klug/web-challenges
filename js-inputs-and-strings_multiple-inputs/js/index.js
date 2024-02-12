@@ -18,6 +18,9 @@ const button = document.querySelector("[data-js=button]");
 let jobIndex = 0;
 
 button.addEventListener("click", (event) => {
+  if (firstInput.value == null && secondInput.value == null) {
+    return;
+  }
   if (jobIndex === 0) {
     secondInput.value = firstInput.value;
     jobIndex = jobIndex + 1;
