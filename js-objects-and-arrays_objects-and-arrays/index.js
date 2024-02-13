@@ -55,7 +55,7 @@ const nameOfFirstPerson = people[0].name;
 // EXERCISE 2
 // Change the value of the variable homersOtherFriends to equal the other friends of Homer.
 
-const homersOtherFriends = people[0].friend[2];
+const homersOtherFriends = people[0]["other friends"];
 
 // EXERCISE 3
 // Change the value of the variable ageOfThirdPerson to equal the age of the third person.
@@ -65,12 +65,18 @@ const ageOfThirdPerson = people[2].age;
 // EXERCISE 4
 // Change the value of the variable mothersNameOfSecondPerson to equal the mothers name of the second person.
 
-const mothersNameOfSecondPerson = people[1].parents[0];
+const mothersNameOfSecondPerson = people[1].parents.mothersName;
 
 // EXERCISE 5
 // Change the value of the variable animaltypeOfLisasPet to equal the type of animal of Lisas pet.
 
-const animaltypeOfLisasPet = people[3].pet[0];
+const animaltypeOfLisasPet = people[3].pet.animal;
+
+console.log(nameOfFirstPerson);
+console.log(homersOtherFriends);
+console.log(ageOfThirdPerson);
+console.log(mothersNameOfSecondPerson);
+console.log(animaltypeOfLisasPet);
 
 export {
   nameOfFirstPerson,
