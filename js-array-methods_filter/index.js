@@ -23,13 +23,46 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = cards.filter((card) => {
+  if (card.id === "2") {
+    return true;
+  } else {
+    return false;
+  }
+});
 
-const allCardsWith3Tags = null;
+console.log("Job1: " + onlyCardWithIdTwo);
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsWith3Tags = cards.filter((card) => {
+  if (card.tags.length === 3) {
+    return true;
+  } else {
+    return false;
+  }
+});
+console.log("Job2: " + allCardsWith3Tags);
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter((card) => {
+  if (card.isBookmarked === false) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log("Job3: " + allCardsThatAreNotBookmarked);
+
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  if (card.isBookmarked === true) {
+    if (card.tags.includes("html") || card.tags.includes("js")) {
+      return true;
+    }
+  } else {
+    return false;
+  }
+});
+
+console.log("Job4: " + allCardsWithTagsHTMLOrJSThatAreBookmarked);
 
 export {
   onlyCardWithIdTwo,
