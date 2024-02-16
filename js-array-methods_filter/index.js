@@ -26,12 +26,10 @@ const cards = [
 const onlyCardWithIdTwo = cards.filter((card) => {
   if (card.id === "2") {
     return true;
-  } else {
-    return false;
   }
 });
 
-console.log("Job1: " + onlyCardWithIdTwo);
+console.log("Job1: ", onlyCardWithIdTwo);
 
 const allCardsWith3Tags = cards.filter((card) => {
   if (card.tags.length === 3) {
@@ -40,7 +38,7 @@ const allCardsWith3Tags = cards.filter((card) => {
     return false;
   }
 });
-console.log("Job2: " + allCardsWith3Tags);
+console.log("Job2: ", allCardsWith3Tags);
 
 const allCardsThatAreNotBookmarked = cards.filter((card) => {
   if (card.isBookmarked === false) {
@@ -50,7 +48,7 @@ const allCardsThatAreNotBookmarked = cards.filter((card) => {
   }
 });
 
-console.log("Job3: " + allCardsThatAreNotBookmarked);
+console.log("Job3: ", allCardsThatAreNotBookmarked);
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
   if (card.isBookmarked === true) {
@@ -62,7 +60,7 @@ const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
   }
 });
 
-console.log("Job4: " + allCardsWithTagsHTMLOrJSThatAreBookmarked);
+console.log("Job4: ", allCardsWithTagsHTMLOrJSThatAreBookmarked);
 
 export {
   onlyCardWithIdTwo,
