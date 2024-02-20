@@ -7,7 +7,11 @@ import { employees } from "../utils/db.js";
 
 function findByLastName(employees, lastName) {
   return employees.find((employee) => {
-    employee.lastName === lastName;
+    if (employee.lastName === lastName) {
+      console.log(employee);
+      return true;
+    }
+    return false;
   });
 }
 
@@ -15,7 +19,10 @@ function findByLastName(employees, lastName) {
 // The some as above, but now you are searching by the 'id'
 function findById(employees, id) {
   return employees.find((employee) => {
-    employee.id === id;
+    if (employee.id === id) {
+      return true;
+    }
+    return false;
   });
 }
 
@@ -23,8 +30,6 @@ function findById(employees, id) {
 // This time you want to find an employee that lives in a city that includes a specific substring.
 
 function findByCitySubString(employees, string) {
-  console.log(employees);
-
   return employees.find((employee) => {
     employee.city === string;
   });
@@ -35,10 +40,11 @@ function findByCitySubString(employees, string) {
 // AND that is older than a specific age
 
 function findByProfessionSubStringAndAge(employees, string, age) {
-  const result = employees.find((employee) => {
+  return employees.find((employee) => {
     if (age < employee.age && employee.profession === string) {
-      return result;
+      return true;
     }
+    return false;
   });
 }
 
