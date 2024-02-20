@@ -10,7 +10,6 @@ async function getUser(url) {
     console.log("Network response: ", response.ok);
     return null;
   }
-
   try {
     const json = await response.json();
     return json.data;
