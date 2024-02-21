@@ -6,6 +6,8 @@ console.clear();
 
 const item = ["Egg", 0.25, 12];
 
+export const { name, price, quantity } = item;
+
 // example: export const [value1, value2] = array;
 
 // EXERCISE 2
