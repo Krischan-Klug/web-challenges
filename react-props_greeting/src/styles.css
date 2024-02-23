@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 2rem;
   font-family: system-ui;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }

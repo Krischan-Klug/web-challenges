@@ -1,7 +1,7 @@
 {
-  "name": "react-basics_hello-world",
+  "name": "react-props_greeting",
   "version": "0.0.0-unreleased",
-  "description": "React Basics: Hello World Challenge",
+  "description": "Greeting",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
