@@ -16,8 +16,8 @@ export default function App() {
   return (
     <div className="container">
       <h1>Place a Table Reservation</h1>
-      <Counter />
-      <p>You are going to reserve a table for 0 people.</p>
+      <Counter onIncrement={handleIncrement} onDecrement={handleDecrement} />
+      <p>You are going to reserve a table for {people} people.</p>
     </div>
   );
 }
