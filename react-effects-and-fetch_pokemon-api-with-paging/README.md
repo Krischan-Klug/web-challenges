@@ -1,6 +1,6 @@
 # React Effects and Fetch: Pokémon API with Paging
 
-We want to display a list of all Pokémon, but the API returns only `20` Pokémon at a time and has multiple pages. Let's write down the logic to browse through the individual pages.
+We want to display a list of all Pokémon, but the API returns only `20` Pokémon at a time and has multiple pages. Let's write down the logic to browse through the individual pages..
 
 ## Task
 
