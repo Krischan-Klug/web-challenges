@@ -1,7 +1,7 @@
 import "./EntryForm.css";
 import Button from "../Button";
 
-export default function EntryForm() {
+export default function EntryForm({ onAddEntry }) {
   return (
     <form className="entry-form">
       <h2 className="entry-form__title">New Entry</h2>
@@ -15,7 +15,9 @@ export default function EntryForm() {
           <textarea name="notes" id="notes" rows="4" />
         </div>
         <div className="entry-form__button-wrapper">
-          <Button type="submit">Create</Button>
+          <Button onAddEntry={onAddEntry} type="submit">
+            Create
+          </Button>
         </div>
       </div>
     </form>
