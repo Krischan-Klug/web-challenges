@@ -2,6 +2,14 @@ import Link from "next/link";
 import GlobalStyle from "../styles";
 import styled from "styled-components";
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const StyledNav = styled.nav`
   border-bottom: solid 2px grey;
   padding: 1rem;
@@ -20,13 +28,13 @@ export default function App({ Component, pageProps }) {
       <StyledNav>
         <StyledList>
           <li>
-            <Link href="/">Home</Link>
+            <StyledLink href="/">Home</StyledLink>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <StyledLink href="/about">About</StyledLink>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <StyledLink href="/contact">Contact</StyledLink>
           </li>
         </StyledList>
       </StyledNav>
