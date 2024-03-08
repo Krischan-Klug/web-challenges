@@ -1,6 +1,6 @@
 import Link from "../components/Link";
 
-export default function HomePage() {
+export default function HomePage({ handleToggle, isOn }) {
   return (
     <div>
       <h1>Home</h1>
